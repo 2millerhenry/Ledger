@@ -8,6 +8,11 @@ Ledger → exactly-once, no matter how many times the loop fires.
 python demo_agent_loop.py
 """
 
+import sys
+from pathlib import Path
+
+sys.path.append(str(Path(__file__).resolve().parents[1]))
+
 import random
 import time
 from ledger import guard
